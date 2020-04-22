@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            //example 1
+
+        var userName = "Nimra Ahmed";
+
+        function modifyUserName() 
+            {
+                userName = "Nimra Junaid";
+            };
+
+         function showUserName() 
+        {
+             alert(userName);
+        };
+        
+        alert(userName); // display Nimra Ahmed
+        modifyUserName();
+        showUserName();// display Nimra Junaid 
+        </script>
+    </head>
+</html>
