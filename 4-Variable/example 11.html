@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+
+            //example 11
+
+            function go(n)
+            {
+                console.log(n);  // a: Array(3)
+
+                for (let n of n.a) //reference error 
+                {
+                    console.log(n) 
+                }
+            }
+
+            go({a: [1, 2, 3]}); 
+
+
+        </script>
+    </head>
+</html>

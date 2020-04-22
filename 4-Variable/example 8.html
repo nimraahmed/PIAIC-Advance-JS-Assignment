@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+
+
+            //example 8
+
+            function do_something()
+            {
+                console.log(bar);  //undefined 
+                console.log(foo); //cannot access before initialization
+                var bar = 1;
+                let foo = 2;
+                console.log(bar);  // 1
+                console.log(foo); // 2
+            }
+
+            do_something(); //undefined 
+            
+
+        </script>
+    </head>
+</html>
