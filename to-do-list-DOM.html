@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <style>
+             div.header{
+                min-width: 80px;
+                padding: 20px; 
+                text-align: center;
+                color:lightseagreen;
+                font-size: larger;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+            }
+
+            div.to-do-list{
+               font-size: small;
+                text-align: left;
+                padding-left: 500px;
+                color:gray;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: x-small;
+            }
+
+            input.to-do-field{
+                width:10cm;
+            }
+
+            input.add{
+                text-align: center;
+                background-color: lightseagreen;
+                width: 10cm;
+                padding:10px;
+                color:white;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: medium;
+            }
+
+            div.actual-list{
+                padding-left: 460px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color:gray;
+            }
+
+            input.dustbin1{
+                padding-left: 250px;
+            }
+
+            input.dustbin2{
+                padding-left: 270px;
+            }
+
+            li.todo{
+                border-style: solid;
+                padding:10px;
+                border-color:lightgrey;
+                width: 9cm;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class ="header">
+
+        </div>
+
+
+        <div class = "to-do-list">
+
+
+        </div>
+
+        <div class = "actual-list">
+            <ul id="todolist">
+                <li class="todo">Dance
+                    <input type = "image" class = "dustbin1" id = "del-todo-1" src ="C:\Users\DELL\Desktop\JS\dustbin.png" width = "22" height = "18" onclick ="addDelHandlerLi1()"/> 
+                </li>
+                <li class = "todo">Eat       
+                    <input type = "image" class = "dustbin2" id = "del-todo-2" src ="C:\Users\DELL\Desktop\JS\dustbin.png" width = "22" height = "18" onclick ="addDelHandlerLi2()"/>     
+                </li>
+                </ul>
+
+
+        </div>
+
+    </body>
+
+    <script>
+
+        var headerDiv = document.querySelector(".header");
+        headerDiv.innerHTML = "<h1>To-Do List!</h1>"
+
+        var h2Div = document.querySelector(".to-do-list");
+        var h2 = document.createElement("h2");
+        h2.innerHTML = "What to do?";
+        h2.setAttribute("class", "h2");
+        h2Div.appendChild(h2);
+
+
+        var textBox = document.createElement("input");
+        textBox.setAttribute("input", "text");
+        textBox.setAttribute("class", "to-do-field");
+        h2Div.appendChild(textBox);
+
+        var lineBreak = document.createElement("br");
+        h2Div.appendChild(lineBreak);
+        var lineBreak2 = document.createElement("br");
+        h2Div.appendChild(lineBreak2);
+        
+
+        var addButton = document.createElement("input");
+        addButton.setAttribute("input", "submit");
+        addButton.setAttribute("class", "add");
+        addButton.setAttribute("value", "ADD");
+        h2Div.appendChild(addButton);
+
+
+
+        
+
+    </script>
+</html>
